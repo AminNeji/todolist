@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.home h1{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:70px;
+  color:rgb(0, 92, 172);
+}
+.create input{
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border:1px solid black;
+  outline:none;
+  padding:10px;
+  font-size: 18px;
+  margin: 10px;
+  box-shadow: 1px 2px 2px rgb(166, 166, 166);
+
+}
+.create button{
+  width: 100px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  height: 40px;
+  border-radius: 5px;
+  border:1px solid black;
+  outline:none;
+  font-size: 18px;
+}
+.create{
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+
+
+.task{
+  display: flex;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  align-items: center;
+  justify-content:space-between;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px rgb(166, 166, 166);
+}
+.checkbox .icon{
+  margin: 4px;
+}
+
+.line-through{
+  text-decoration: line-through;
+  text-decoration-color: rgb(157, 94, 94);
+  text-decoration-thickness: 2px;
+}
+
+.home a{
+  color: rgb(0, 92, 172);
+}
+.home h2{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.link{
+  margin: 45px;
+}
+
+
