@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 const Home = () => {
   const [tasks, setTasks] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/api/tasks/")
+    fetch(`${process.env.REACT_APP_API_URL}/`)
       .then(res => res.json())
       .then(data => setTasks(data))
       .catch(err => console.log(err))

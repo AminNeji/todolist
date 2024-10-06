@@ -6,7 +6,7 @@ import { useState} from 'react';
 const Create = () => {
   const [task, setTask] = useState([]);
     const handleclick = () => {
-      fetch("http://localhost:4000/api/tasks/add", {
+      fetch(`${process.env.REACT_APP_API_URL}/add`, {
         method:'POST',
         headers: {
           'Content-Type': 'application/json'

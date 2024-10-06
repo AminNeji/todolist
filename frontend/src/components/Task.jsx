@@ -6,7 +6,7 @@ import { useState } from 'react';
 const Task = ({taskid,task, isCompleted}) => {
     const [isDone,setIsDone]=useState(isCompleted);
     const handleEdit=(taskid,currentStatus)=>{
-        fetch(`http://localhost:4000/api/tasks/update/${taskid}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/update/${taskid}`, {
             method:'PUT',
             headers:{
                 'Content-Type':'application/json'
@@ -21,7 +21,7 @@ const Task = ({taskid,task, isCompleted}) => {
     }
     
     const handleDelete=(taskid)=>{
-        fetch(`http://localhost:4000/api/tasks/delete/${taskid}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/delete/${taskid}`, {
             method:'DELETE',
         })
         .then(res=>res.json())
