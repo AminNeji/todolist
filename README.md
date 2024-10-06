@@ -34,7 +34,7 @@ Make sure you have the following installed on your machine:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/your-username/todo-list-app.git
-   cd todo-list-app
+   cd todolist
    ```
 
 2. **Install dependencies for the backend:**
@@ -92,13 +92,13 @@ Make sure you have the following installed on your machine:
 ## Project Structure
 
 ```
-todo-list-app/
+todolist/
 │
 ├── backend/                # Backend folder
 │   ├── models/             # MongoDB schemas
 │   ├── routes/             # API routes for tasks
 │   ├── .env                # Environment variables
-│   └── server.js           # Main backend server
+│   └── index.js           # Main backend server
 │
 ├── frontend/               # Frontend folder
 │   ├── src/                
